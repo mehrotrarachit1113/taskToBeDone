@@ -10,6 +10,7 @@ class App extends Component {
   render() {
     return (
        <BrowserRouter>
+       <div className = 'container-fluid'>
         <div className="main-app">
          <Navbar />
          <Categories />
@@ -17,6 +18,7 @@ class App extends Component {
              <Route exact path='/' component={Default} />
              <Route exact path='/:id' component={(props) =><ProductList {...props} key={props.match.params.id}/>} />
            </Switch>
+         </div>
          </div>
        </BrowserRouter>
 

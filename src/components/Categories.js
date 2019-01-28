@@ -20,7 +20,7 @@ class Categories extends Component{
 
   render(){
     return(
-      <div>
+      <div className = 'container-fluid'>
         <h4 className="mt-4 mx-5">Our Products</h4>
         <AppBar position="static" color="default" style={{ background: '#FFFFFF', boxShadow: 'none'}}>
           <Tabs
