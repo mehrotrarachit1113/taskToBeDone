@@ -21,6 +21,7 @@ class Categories extends Component{
 
   render(){
     return(
+      <div className = 'rootContainer'>
       <div className = 'container-fluid'>
         <h4 className="mt-4 mx-5">Our Products</h4>
         <AppBar position="static" color="default" style={{ background: '#FFFFFF', boxShadow: 'none'}}>
@@ -50,6 +51,7 @@ class Categories extends Component{
         })}
           </Tabs>
         </AppBar>
+       </div>
        </div>
     );
   }
