@@ -38,7 +38,7 @@ class Categories extends Component{
                   <Tab
                     icon = {<img src={category.category_image}
                     alt={category.category_name} />}
-                    style={{ borderRadius: '8px'}}
+                    style={{ borderRadius: '8px' , OTabSize : '10'}}
                     />
                   <div className='center text-uppercase'>{category.category_name}</div>
                 </div>

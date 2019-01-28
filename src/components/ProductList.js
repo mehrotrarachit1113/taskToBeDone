@@ -30,7 +30,7 @@ class ProductList extends Component{
     const {isLoading, products} = this.state;
     return(
       <div className = 'container-fluid'>
-        {isLoading ? (<p>Loading</p>
+        {isLoading ? (<p>Fetching....</p>
           // <div className = 'container' style={{marginLeft: '45%', marginTop: '15%'}}>
           //   <Loader
           //     type='Bars'

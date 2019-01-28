@@ -3,9 +3,10 @@ import React from 'react';
 const Product = (props) =>{
   const {products} = props;
   return(
-   <div className='mt-5 px-5'>
+   <div className='mt-5 px-5 col-sm'>
       {products.map(product =>{
         return(
+          <div className = 'container-fluid'>
           <div className="media p-3 bg-white" key={product.id}>
             <img src={product.image_urls["x300"]} alt="img" className="mr-5 mt-1" style={{width:180}}/>
             <div className="media-body mt-1">
@@ -39,6 +40,7 @@ const Product = (props) =>{
                 )
               }
             </div>
+          </div>
           </div>
         )
       })}
