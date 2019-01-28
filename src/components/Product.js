@@ -10,9 +10,9 @@ const Product = (props) =>{
         return(
           <div className = 'container-fluid'>
           <div className="media p-3 bg-white col-sm" key={product.id}>
-          <div className = 'imgDiv'>
+          
             <img id = 'productImage' src={product.image_urls["x300"]} alt="img" className="mr-5 mt-1" style={{width:'180'}}/>
-            </div>
+            
             <div className="media-body mt-1">
               <a href= '/' style={{color:'black'}}>
                 <h5 id = 'productName'>
