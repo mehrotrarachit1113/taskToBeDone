@@ -6,6 +6,7 @@ import ProductList from './components/ProductList';
 import Default from './components/Default';
 import {BrowserRouter, Route, Switch} from 'react-router-dom';
 
+
 class App extends Component {
   render() {
     return (
@@ -20,6 +21,7 @@ class App extends Component {
            </Switch>
          </div>
          </div>
+         
        </BrowserRouter>
 
     );

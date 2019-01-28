@@ -3,6 +3,7 @@ import AppBar from '@material-ui/core/AppBar';
 import Tabs from '@material-ui/core/Tabs';
 import Tab from '@material-ui/core/Tab';
 import {Link} from 'react-router-dom';
+import '../style/Categories.css'
 
 class Categories extends Component{
   state = {
@@ -29,16 +30,17 @@ class Categories extends Component{
             textColor="primary"
             variant="scrollable"
             scrollButtons="auto"
+            className = 'productTabs'
           >
           {this.state.categories.map(category =>{
             return(
-              <div>
+              <div className = 'contianer-fluid'>
                 <Link to ={`/${category.category_id}`} >
                 <div className='container' key={category.category_id}>
                   <Tab
                     icon = {<img src={category.category_image}
                     alt={category.category_name} />}
-                    style={{ borderRadius: '8px' , OTabSize : '10'}}
+                    style={{ borderRadius: '8px'}}
                     />
                   <div className='center text-uppercase'>{category.category_name}</div>
                 </div>

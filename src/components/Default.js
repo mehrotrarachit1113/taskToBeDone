@@ -24,15 +24,15 @@ class Default extends Component{
   render(){
     const {isLoading, products} = this.state;
     return(
-      <div>
-        {isLoading ? (<div>Fetching..........</div>
-          // <div style={{marginLeft: '45%', marginTop: '15%'}}>
-          //   <Loader
-          //     type='Bars'
-          //     color='#00BFFF'
-          //     height='80'
-          //     width='80'/>
-          // </div>
+      <div className = 'container-fluid'>
+        {isLoading ? (
+          <div style={{marginLeft: '30%', marginTop: '15%'}}>
+            <Loader
+              type='Bars'
+              color='#00BFFF'
+              height='80'
+              width='80'/>
+          </div>
         ) : (<Product products={products} />)}
       </div>
     );

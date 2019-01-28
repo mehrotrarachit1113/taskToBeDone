@@ -29,5 +29,45 @@
   border-radius: 0;
 }
 
+@media only screen and (min-width : 768) {
+  p {
+    font-size: 60%,
+    
+  }
+  
+  img {
+    size : 60%
+  }
 
+  button {
+    size: 50%
+  }
 
+  body{
+    width: 75%
+  }
+}
+
+@media only screen and (min-width : 480px) and (max-width : 768px) {
+  p {
+    font-size: 30%,
+    
+  }
+  
+  img-res {
+    size : 30%
+  }
+
+  span {
+    font-size: 30%,
+    
+}
+
+  .rachit {
+    tab-size: 1,
+    
+  }
+
+ 
+ 
+}
